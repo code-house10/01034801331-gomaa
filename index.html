@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W43Q4P3C');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة لنقل العفش | خصم 25% | ونش رفع العفش | نقل آمن</title>
+    <meta name="description" content="شركة لنقل العفش تقدم خصم 25% على جميع خدمات نقل العفش جميع مناطق مصر. نوفر ونش رفع العفش، تغليف، فك وتركيب، ونقل آمن ومضمون. اتصل الآن!">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+            color: #334155; /* Darker gray text */
+            padding-bottom: 100px; /* Add padding to prevent content from being hidden by the floating bar */
+        }
+        .header-bg {
+            background-color: #1e3a8a; /* Dark blue for header */
+        }
+        .hero-section {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            background-color: #0f172a; /* Even darker blue for video background */
+        }
+        .hero-section iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .btn-primary {
+            background-color: #2563eb; /* Blue for primary buttons */
+            color: white;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* Darker blue on hover */
+        }
+        .section-heading {
+            color: #1e3a8a; /* Dark blue for section headings */
+        }
+        .card-bg {
+            background-color: #ffffff; /* White for cards */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer-bg {
+            background-color: #1e3a8a; /* Dark blue for footer */
+            color: white;
+        }
+        .modal {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+        }
+        .modal-content {
+            background-color: #ffffff; /* White for modal content */
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .modal-button-confirm {
+            background-color: #22c55e; /* Green for confirm */
+            color: white;
+        }
+        .modal-button-confirm:hover {
+            background-color: #16a34a;
+        }
+        .modal-button-cancel {
+            background-color: #ef4444; /* Red for cancel */
+            color: white;
+        }
+        .modal-button-cancel:hover {
+            background-color: #dc2626;
+        }
+        .modal-button-close {
+            background-color: #64748b; /* Gray for close */
+            color: white;
+        }
+        .modal-button-close:hover {
+            background-color: #475569;
+        }
+
+        /* Discount Circle Animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            }
+        }
+
+        .discount-circle {
+            position: absolute;
+            top: 20%; /* Adjust as needed */
+            right: 5%; /* Position on the left side (due to rtl, right is left) */
+            background-color: #ef4444; /* Red background for discount */
+            color: white;
+            border-radius: 50%;
+            width: 150px; /* Size of the circle */
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            z-index: 10; /* Ensure it's above the video */
+            animation: pulse 2s infinite; /* Apply pulse animation */
+            padding: 10px; /* Add some padding for text */
+            line-height: 1.2;
+        }
+
+        /* Responsive adjustments for the discount circle */
+        @media (max-width: 768px) {
+            .discount-circle {
+                width: 100px;
+                height: 100px;
+                font-size: 1rem;
+                top: 10%;
+                right: 3%;
+            }
+        }
+
+        /* Phone icon animation */
+        @keyframes phone-jiggle {
+            0% { transform: rotate(0deg) scale(1); }
+            15% { transform: rotate(5deg) scale(1.05); }
+            30% { transform: rotate(-5deg) scale(1); }
+            45% { transform: rotate(5deg) scale(1.05); }
+            60% { transform: rotate(-5deg) scale(1); }
+            75% { transform: rotate(0deg) scale(1.05); }
+            100% { transform: rotate(0deg) scale(1); }
+        }
+
+        @keyframes flip-horizontal {
+            0%, 100% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+        }
+
+        .phone-icon-animated {
+            animation: phone-jiggle 1.5s infinite 2s, flip-horizontal 3s infinite 2s; /* Jiggle and flip after 2s delay, then repeat */
+            display: inline-block; /* Needed for transform to work correctly */
+            margin-left: 8px; /* Space between icon and text */
+        }
+        
+        
+        
+        
+        /* Positioned Badge + Text Above Offer Banner (Left Side) */
+        .above-offer-left {
+            position: fixed;
+            bottom: 64px;
+            left: 16px;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            background: rgba(0,0,0,.35);
+            backdrop-filter: blur(6px);
+            padding: .6rem .9rem;
+            border-radius: 9999px;
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(0,0,0,.25);
+        }
+
+/* Positioned CTA Button Above Offer Banner */
+        .above-offer-btn {
+            position: fixed;
+            bottom: 64px; /* above the banner height */
+            right: 16px;
+            z-index: 1001;
+        }
+
+/* ===== Redesigned Floating Offer Bar ===== */
+        .floating-offer-bar {
+            position: fixed;
+            bottom: 14px;
+            left: 12px;
+            right: 12px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .85rem;
+            padding: .85rem 1rem;
+            border-radius: 9999px;
+            box-shadow: 0 14px 30px rgba(0,0,0,.18), inset 0 0 0 1px rgba(255,255,255,.15);
+            background: linear-gradient(90deg, #ff7b00 0%, #ff4d2d 52%, #ff2e2e 100%);
+            color: #fff;
+            backdrop-filter: blur(6px);
+        }
+        .offer-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            font-weight: 900;
+            font-size: .95rem;
+            line-height: 1;
+            padding: .5rem .9rem;
+            border-radius: 9999px;
+            background: rgba(255,255,255,.15);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.25);
+            white-space: nowrap;
+        }
+        .offer-text {
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: .1px;
+            text-shadow: 0 2px 8px rgba(0,0,0,.25);
+            white-space: nowrap;
+        }
+        .countdown-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+            font-weight: 900;
+        }
+        .countdown-pill {
+            display: inline-flex;
+            min-width: 42px;
+            align-items: center;
+            justify-content: center;
+            padding: .35rem .5rem;
+            border-radius: 10px;
+            background: rgba(0,0,0,.25);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.22);
+            font-variant-numeric: tabular-nums;
+        }
+        .offer-cta-btn {
+            background: #00e676;
+            color: #0a0a0a;
+            font-weight: 900;
+            padding: .85rem 1.25rem;
+            border-radius: 9999px;
+            box-shadow: 0 12px 24px rgba(0,230,118,.35);
+            transition: transform .15s ease, box-shadow .15s ease, background .2s ease;
+            white-space: nowrap;
+        }
+        .offer-cta-btn:hover { 
+            transform: translateY(-1px) scale(1.02);
+            box-shadow: 0 18px 32px rgba(0,230,118,.45);
+            background: #00d66b;
+        }
+        .offer-cta-btn:active {
+            transform: translateY(0);
+        }
+        .offer-x {
+            width: 38px;
+            height: 38px;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,.12);
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,.25);
+        }
+        @media (max-width: 640px) {
+            .floating-offer-bar { 
+                gap: .5rem; 
+                padding: .6rem .7rem; 
+                bottom: 10px; left: 8px; right: 8px;
+                border-radius: 16px;
+            }
+            .offer-text { font-size: .85rem; }
+            .offer-badge { font-size: .8rem; padding: .4rem .7rem; }
+            .countdown-pill { min-width: 34px; padding: .28rem .4rem; }
+            .offer-cta-btn { padding: .65rem .9rem; font-size: .9rem; }
+        }
+
+            .offer-timer-text {
+                display: none; /* Hide the text "ينتهي العرض خلال" on small screens */
+            }
+            .offer-text {
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+            .countdown-timer {
+                font-size: 0.8rem; /* For the colons */
+            }
+            .countdown-timer span {
+                font-size: 1rem;
+                padding: 0.2rem 0.4rem;
+            }
+            .offer-cta-btn {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.75rem;
+                white-space: nowrap;
+            }
+        }
+
+    </style>
+</head>
+<body class="text-right">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W43Q4P3C"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="header-bg text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-bold">
+                <a href="#" class="hover:text-gray-300">شركة نقل ورفع العفش</a>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav id="main-nav" class="hidden md:flex flex-col md:flex-row md:space-x-4 md:space-x-reverse items-center md:items-stretch w-full md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse w-full md:w-auto text-center md:text-right">
+                    <li><a href="#services" class="block py-2 px-4 hover:bg-blue-700 rounded-md">خدماتنا</a></li>
+                    <li><a href="#gallery" class="block py-2 px-4 hover:bg-blue-700 rounded-md">معرض الصور</a></li>
+                    <li><a href="#about" class="block py-2 px-4 hover:bg-blue-700 rounded-md">من نحن</a></li>
+                    <li><a href="#contact" class="block py-2 px-4 hover:bg-blue-700 rounded-md">اتصل بنا</a></li>
+                </ul>
+                <!-- Header Call Button - Now triggers modal -->
+                <a href="#" class="btn-primary call-button flex items-center justify-center md:justify-start space-x-2 space-x-reverse mt-4 md:mt-0 md:ml-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>اتصل الآن: 01034801331</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero-section">
+        <iframe src="https://www.youtube.com/embed/OaXIDvOJQGc?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&showinfo=0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+        </iframe>
+        <!-- Discount Circle -->
+        <div class="discount-circle">
+            <span>25%</span>
+            <span>خصم لفترة محدودة</span>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-heading">خدماتنا المتميزة</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <div class="text-5xl text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.577l3.968 2.05A1 1 0 0116 7.5V14a1 1 0 01-1 1h-.5V17a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2h-2v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2.5H4a1 1 0 01-1-1V7.5a1 1 0 01.032-.423L7.5 4.577V3a1 1 0 011-1h1zM5 13.5V8.5a1 1 0 011-1h8a1 1 0 011 1v5.5a1 1 0 01-1 1H6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">نقل العفش جميع مناطق مصر</h3>
+                        <p class="text-gray-600">نقدم خدمات نقل العفش بكفاءة واحترافية عالية داخل مدينتك وإلى أي مدينة أخرى.</p>
+                    </div>
+                    <!-- Service Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <div class="text-5xl text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.586l1.293 1.293a1 1 0 01-1.414 1.414l-2.5-2.5a1 1 0 010-1.414l2.5-2.5a1 1 0 011.414 1.414L12.414 13H15V5H5v8h2.586l-1.293 1.293a1 1 0 01-1.414-1.414l2.5-2.5a1 1 0 011.414 1.414L7.586 13H5V5z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">ونش رفع العفش</h3>
+                        <p class="text-gray-600">نستخدم أحدث أوناش رفع العفش لضمان سلامة أثاثك وسرعة النقل، حتى للطوابق العليا.</p>
+                    </div>
+                    <!-- Service Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <div class="text-5xl text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a1 1 0 001-1V2a1 1 0 00-1-1H4a1 1 0 00-1 1v1a1 1 0 001 1zm6 9a1 1 0 001 1h3a1 1 0 001-1v-1a1 1 0 00-1-1h-3a1 1 0 00-1 1v1zm-3 0a1 1 0 001 1h3a1 1 0 001-1v-1a1 1 0 00-1-1h-3a1 1 0 00-1 1v1zm-3 0a1 1 0 001 1h3a1 1 0 001-1v-1a1 1 0 00-1-1h-3a1 1 0 00-1 1v1zm10 0a1 1 0 001 1h3a1 1 0 001-1v-1a1 1 0 00-1-1h-3a1 1 0 00-1 1v1zM2 9a1 1 0 001 1h14a1 1 0 001-1V8a1 1 0 00-1-1H3a1 1 0 00-1 1v1zm10-7a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">تغليف، فك وتركيب الأثاث</h3>
+                        <p class="text-gray-600">فريق متخصص في فك وتركيب جميع أنواع الأثاث وتغليفه بأفضل الخامات لحمايته.</p>
+                    </div>
+                    <!-- Service Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-heading">معرض الصور</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Image Card 1 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/carousel-1.jpg" alt="صورة نقل عفش 1" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">نقل آمن</h3>
+                        <p class="text-gray-600">فريقنا يضمن نقل أثاثك بأمان تام وحرص شديد.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+                <!-- Image Card 2 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/carousel-2.jpg" alt="صورة نقل عفش 2" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">تغليف احترافي</h3>
+                        <p class="text-gray-600">نستخدم أفضل مواد التغليف لحماية ممتلكاتك.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+                <!-- Image Card 3 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/carousel-3.jpg" alt="صورة نقل عفش 3" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">فك وتركيب</h3>
+                        <p class="text-gray-600">خبراء في فك وتركيب جميع أنواع الأثاث بدقة.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>اتصل بنا</span>
+                    </a>
+                </div>
+                <!-- Image Card 4 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/last.jpg" alt="صورة نقل عفش 4" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">أوناش حديثة</h3>
+                        <p class="text-gray-600">نستخدم أحدث الأوناش لرفع وتنزيل العفش بسهولة.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105
+                                6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <!-- Image Card 5 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t1.jpg" alt="صورة نقل عفش 5" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">سرعة وكفاءة</h3>
+                        <p class="text-gray-600">نقل عفش سريع وفعال دون المساس بالجودة.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <!-- Image Card 6 -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t2.jpg" alt="صورة نقل عفش 6" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">رضا العملاء</h3>
+                        <p class="text-gray-600">هدفنا الأول هو رضاكم التام عن خدماتنا.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <!-- Additional Image Cards -->
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t3.jpg" alt="صورة نقل عفش 7" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">فريق متخصص</h3>
+                        <p class="text-gray-600">فريق عمل مدرب ومجهز لجميع مهام النقل.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t4.jpg" alt="صورة نقل عفش 8" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">خدمة 24/7</h3>
+                        <p class="text-gray-600">نحن متاحون لخدمتك في أي وقت.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t5.jpg" alt="صورة نقل عفش 9" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">تأمين شامل</h3>
+                        <p class="text-gray-600">نضمن سلامة ممتلكاتك بتأمين شامل.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/team-1.jpg" alt="صورة نقل عفش 10" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">فريق العمل</h3>
+                        <p class="text-gray-600">تعرف على فريقنا المحترف.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/team-2.jpg" alt="صورة نقل عفش 11" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">خبراء النقل</h3>
+                        <p class="text-gray-600">سنوات من الخبرة في نقل العفش.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/testimonial-2.jpg" alt="صورة نقل عفش 12" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">شهادات العملاء</h3>
+                        <p class="text-gray-600">ماذا يقول عملاؤنا عن خدماتنا.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t13.jpg" alt="صورة نقل عفش 13" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">جاهزون لخدمتكم</h3>
+                        <p class="text-gray-600">فريقنا مستعد لتلبية احتياجاتك.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t12.jpg" alt="صورة نقل عفش 14" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">دقة واحترافية</h3>
+                        <p class="text-gray-600">نقل عفش بدقة واحترافية عالية.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t11.jpg" alt="صورة نقل عفش 15" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">خدمة موثوقة</h3>
+                        <p class="text-gray-600">اعتمد علينا لنقل أثاثك بأمان.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t9.jpg" alt="صورة نقل عفش 16" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">توصيل سريع</h3>
+                        <p class="text-gray-600">نضمن توصيل أثاثك في أسرع وقت.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t6.jpg" alt="صورة نقل عفش 17" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">تخطيط دقيق</h3>
+                        <p class="text-gray-600">نخطط لكل خطوة لضمان نقل سلس.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t7.jpg" alt="صورة نقل عفش 18" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">مرونة في الخدمة</h3>
+                        <p class="text-gray-600">خدماتنا مرنة لتناسب احتياجاتك.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-4 text-center flex flex-col justify-between">
+                    <div>
+                        <img src="photos/t8.jpg" alt="صورة نقل عفش 19" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">أمان وحماية</h3>
+                        <p class="text-gray-600">أثاثك في أيدٍ أمينة.</p>
+                    </div>
+                    <!-- Image Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-center mb-12 section-heading">لماذا تختارنا؟</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">فريق عمل محترف</h3>
+                        <p class="text-gray-600">لدينا فريق من الخبراء المدربين على أعلى مستوى لضمان نقل آمن وفعال لأثاثك.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">أسعار تنافسية</h3>
+                        <p class="text-gray-600">نقدم أفضل الأسعار مع الحفاظ على جودة الخدمة، بالإضافة إلى خصومات مميزة.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">تغطية شاملة</h3>
+                        <p class="text-gray-600">نغطي جميع مناطق المدينة وخارجها، لنوفر لك خدمة نقل عفش أينما كنت.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">أحدث المعدات</h3>
+                        <p class="text-gray-600">نستخدم أحدث الأوناش والمعدات لضمان سلامة الأثاث وسرعة عملية النقل.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">خدمة عملاء 24/7</h3>
+                        <p class="text-gray-600">فريق دعم العملاء لدينا متاح على مدار الساعة للإجابة على استفساراتك وتقديم المساعدة.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">تأمين على العفش</h3>
+                        <p class="text-gray-600">نوفر خيارات تأمين على العفش لضمان راحة بالك وحماية ممتلكاتك.</p>
+                    </div>
+                    <!-- Why Choose Us Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-heading">ماذا يقول عملاؤنا؟</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-gray-700 mb-4 italic">"خدمة ممتازة وسريعة جداً، فريق عمل محترف ومتعاون للغاية. أنصح بهم بشدة!"</p>
+                        <p class="font-semibold text-gray-800">- أحمد محمد</p>
+                    </div>
+                    <!-- Testimonials Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+                <div class="card-bg p-6 text-center flex flex-col justify-between">
+                    <div>
+                        <p class="text-gray-700 mb-4 italic">"تجربة نقل عفش خالية من المتاعب. كل شيء تم بكفاءة ودقة. شكراً لكم!"</p>
+                        <p class="font-semibold text-gray-800">- فاطمة علي</p>
+                    </div>
+                    <!-- Testimonials Card Call Button - Now triggers modal -->
+                    <a href="#" class="btn-primary call-button mt-6 w-full flex items-center justify-center space-x-2 space-x-reverse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span>تواصل معنا</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 section-heading">من نحن</h2>
+            <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+                نحن شركة رائدة في مجال نقل العفش، ملتزمون بتقديم أفضل الخدمات لعملائنا الكرام. نعتمد على فريق عمل مدرب ومجهز بأحدث الأدوات لضمان نقل آمن وسريع لأثاثك. هدفنا هو راحتك ورضاك التام عن خدماتنا.
+            </p>
+            <div class="mt-10">
+                <!-- About Us Call Button - Already triggers modal -->
+                <a href="#" class="btn-primary call-button">احصل على خصم 25% الآن!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 section-heading">اتصل بنا</h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-8">
+                لا تتردد في الاتصال بنا للحصول على استشارة مجانية أو لطلب خدمة نقل العفش. فريقنا متاح على مدار الساعة لخدمتك.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 md:space-x-reverse">
+                <!-- Contact Section Call Button - Now triggers modal -->
+                <a href="#" class="btn-primary call-button flex items-center space-x-2 space-x-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    <span>اتصل بنا: 01034801331</span>
+                </a>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 شركة نقل ورفع العفش. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Offer Bar -->
+
+<div class="above-offer-left">
+    <div class="offer-badge"><span>🎁 خصم 25%</span></div>
+    <div class="offer-text">عرض محدود — احجز نقل عفشك الآن</div>
+</div>
+<div id="floatingOfferBar" class="floating-offer-bar">
+        <button class="offer-cta-btn call-button" style="margin-left:auto">احجز العرض</button>
+        <div class="countdown-timer">
+            <span class="countdown-pill" id="hours">02</span>
+            <span>:</span>
+            <span class="countdown-pill" id="minutes">59</span>
+            <span>:</span>
+            <span class="countdown-pill" id="seconds">59</span>
+        </div>
+        <button id="offerCloseBtn" class="offer-x" aria-label="إغلاق">✕</button>
+    </div>
+
+        <p class="offer-text">خصم 25% نقل عفش</p>
+        <button class="offer-cta-btn call-button">اطلب العرض الآن</button>
+    </div>
+
+
+ <!-- Universal Modal Structure with 3 Steps -->
+    <div id="universalModal" class="modal fixed inset-0 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="modal-content p-8 max-w-md w-full mx-4 text-center transform scale-95 transition-transform duration-300">
+            
+            <!-- Step 1: Initial Confirmation -->
+            <div id="step1">
+                <h3 class="text-2xl font-bold mb-2 text-gray-800">تأكيد الاهتمام</h3>
+                <p class="text-gray-600 mb-6">هل أنت جاد بشأن طلب الخدمة وتواجه مشكلة حقيقية؟</p>
+                <div class="flex justify-center space-x-4 space-x-reverse">
+                    <button id="confirmStep1Btn" class="modal-button-confirm px-6 py-3 rounded-lg font-semibold">نعم، أنا جاد</button>
+                    <button class="cancel-call-btn modal-button-cancel px-6 py-3 rounded-lg font-semibold">إلغاء</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Reconfirmation -->
+            <div id="step2" class="hidden">
+                <h3 class="text-2xl font-bold mb-2 text-gray-800">خطوة أخيرة للتأكيد</h3>
+                 <p class="text-gray-600 mb-6">نحن هنا لمساعدتك. اضغط للتحدث مع خبير الآن.</p>
+                <div class="flex justify-center space-x-4 space-x-reverse">
+                    <button id="confirmStep2Btn" class="modal-button-confirm px-6 py-3 rounded-lg font-semibold">تحدث مع خبير</button>
+                    <button class="cancel-call-btn modal-button-cancel px-6 py-3 rounded-lg font-semibold">إلغاء</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Final Call Action -->
+            <div id="step3" class="hidden">
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">اضغط على الرقم للاتصال</h3>
+                <p class="text-gray-700 mb-6">سيتم تحويلك مباشرة للمكالمة.</p>
+                <a id="directCallLink" href="tel:01034801331" class="bg-green-500 text-white py-4 px-8 rounded-full font-bold text-2xl inline-flex items-center justify-center space-x-3 space-x-reverse hover:bg-green-600 transition-colors duration-300 shadow-lg">
+                    <div class="phone-icon-animated">
+                        <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                    <span id="callLinkText">01034801331</span>
+                </a>
+                <button class="cancel-call-btn modal-button-close px-6 py-3 rounded-lg font-semibold mt-8 w-full">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Modal Elements ---
+            const universalModal = document.getElementById('universalModal');
+            const modalContent = universalModal.querySelector('.modal-content');
+            
+            // Step containers
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const step3 = document.getElementById('step3');
+
+            // Buttons
+            const callButtons = document.querySelectorAll('.call-button');
+            const confirmStep1Btn = document.getElementById('confirmStep1Btn');
+            const confirmStep2Btn = document.getElementById('confirmStep2Btn');
+            const cancelCallBtns = document.querySelectorAll('.cancel-call-btn');
+            const directCallLink = document.getElementById('directCallLink');
+
+            // --- Phone Number ---
+            const phoneNumber = '01034801331';
+            directCallLink.href = 'tel:' + phoneNumber;
+            document.getElementById('callLinkText').textContent = phoneNumber;
+
+            // --- Functions ---
+            function openModal() {
+                // Reset to the first step every time the modal is opened
+                step1.classList.remove('hidden');
+                step2.classList.add('hidden');
+                step3.classList.add('hidden');
+                
+                universalModal.classList.remove('hidden');
+                setTimeout(() => {
+                    universalModal.classList.add('opacity-100');
+                    modalContent.classList.remove('scale-95');
+                    modalContent.classList.add('scale-100');
+                }, 10);
+            }
+
+            function closeModal() {
+                universalModal.classList.remove('opacity-100');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+                setTimeout(() => {
+                    universalModal.classList.add('hidden');
+                }, 300);
+            }
+
+            // --- Event Listeners ---
+
+            // Open modal when any call button is clicked
+            callButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal();
+                });
+            });
+
+            // Go from Step 1 to Step 2
+            confirmStep1Btn.addEventListener('click', () => {
+                step1.classList.add('hidden');
+                step2.classList.remove('hidden');
+            });
+
+            // Go from Step 2 to Step 3
+            confirmStep2Btn.addEventListener('click', () => {
+                step2.classList.add('hidden');
+                step3.classList.remove('hidden');
+            });
+            
+            // Final call link click
+            directCallLink.addEventListener('click', () => {
+                // The link will work as intended due to the href="tel:..."
+                // We can close the modal after a short delay
+                setTimeout(closeModal, 800);
+            });
+
+            // Close modal with any cancel/close button
+            cancelCallBtns.forEach(button => {
+                button.addEventListener('click', closeModal);
+            });
+
+            // Close modal by clicking on the background overlay
+            universalModal.addEventListener('click', (e) => {
+                if (e.target === universalModal) {
+                    closeModal();
+                }
+            });
+
+            // Close modal with the 'Escape' key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !universalModal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mainNav = document.getElementById('main-nav');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mainNav.classList.toggle('hidden');
+            });
+            
+            mainNav.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mainNav.classList.contains('hidden')) {
+                       if (window.innerWidth < 768) { // Only close on mobile
+                           mainNav.classList.add('hidden');
+                       }
+                    }
+                });
+            });
+
+            // --- Countdown Timer ---
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+            const floatingOfferBar = document.getElementById('floatingOfferBar');
+
+            const offerDuration = 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+            const endTime = new Date().getTime() + offerDuration;
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    floatingOfferBar.innerHTML = '<p class="offer-text">انتهى العرض</p>';
+                    return;
+                }
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                hoursEl.textContent = hours.toString().padStart(2, '0');
+                minutesEl.textContent = minutes.toString().padStart(2, '0');
+                secondsEl.textContent = seconds.toString().padStart(2, '0');
+            }
+
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            updateCountdown(); // Initial call
+
+            // Close button for the redesigned offer bar
+            const offerCloseBtn = document.getElementById('offerCloseBtn');
+            if (offerCloseBtn) {
+                offerCloseBtn.addEventListener('click', () => {
+                    const bar = document.getElementById('floatingOfferBar');
+                    if (bar) { bar.style.display = 'none'; }
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
